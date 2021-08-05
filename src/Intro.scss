@@ -1,0 +1,314 @@
+@import "./App.scss";
+
+#intro {
+    min-height: 100vh;
+    background: radial-gradient(circle at bottom, $dark 0%, $black 100%);
+    max-width: 100vw;
+    overflow: hidden;
+    color: #FFF;
+    #content-container {
+      padding: 50px 20px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      #intro-content {
+          text-align: center;
+          animation: titleFadeDown .2s ease-in both;
+          -webkit-animation: titleFadeDown .2s ease-in both;
+          animation-delay: 1.5s;
+          h2 {
+              font-size: 30px;
+          }
+          .sub-title {
+              font-size: 20px;
+              color: $shadow;
+          }
+          #greeting {
+              font-size: 16px;
+              padding: 1em 15px 0 15px;
+              animation: fadeDown .2s ease-in both;
+              -webkit-animation: fadeDown .2s ease-in both;
+              animation-delay: 1.63s;
+          }
+          .menu {
+              padding-top: .5em;
+              nav {
+                  ul {
+                      display: inline-block;
+                      margin: 4px 8px;
+                      padding: 0;
+                      list-style: none;
+                      margin-bottom: -1em;
+                      li {
+                          float: left;
+                          margin-right: 20px;
+                          animation: fadeDown .2s ease-in both;
+                          -webkit-animation: fadeDown .2s ease-in both;
+                          svg {
+                              display: block;
+                              font-size: 34px;
+                              margin: auto;
+                          }
+                          a {
+                              border-radius: .75em;
+                              display: block;
+                              padding: 20px 0;
+                              min-width: 105px;
+                              height: 95px;
+                              background: rgba(0,0,0,.38);
+                              color: #FFF;
+                              text-transform: uppercase;
+                              font-size: 11px;
+                              transition: all .2s ease-in-out;
+                              -webkit-transition: all .2s ease-in-out;
+                              text-decoration: none;
+                          }
+                          a:hover, a:focus {
+                              background: rgba(0,0,0,.15);
+                              box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .19);
+                              transform: translateY(-2px);
+                              -webkit-transform: translateY(-2px);
+                          }
+                      }
+                      li:last-child {
+                          margin-right: 0;
+                          padding-right: 0;
+                      }
+                  }
+                  ul:first-child li:first-child {
+                      animation-delay: 1.7s;
+                      -webkit-animation-delay: 1.7s;
+                  }
+                  ul:first-child li:nth-child(2) {
+                      animation-delay: 1.77s;
+                      -webkit-animation-delay: 1.77s;
+                  }
+                  ul:nth-child(2) li:first-child {
+                      animation-delay: 1.84s;
+                      -webkit-animation-delay: 1.84s;
+                  }
+                  ul:nth-child(2) li:nth-child(2) {
+                      animation-delay: 1.91s;
+                      -webkit-animation-delay: 1.91s;
+                  }
+              }
+          }
+      }
+    }
+    #moon {
+        margin: 70px;
+        right: 100px;
+        top: 50px;
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-color: $moon;
+        border-radius: 50%;
+        animation: rotating 90s linear infinite;
+        -webkit-animation: rotating 90s linear infinite;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.19);
+        .crater {
+            background-color: darken($moon, 15%);
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: inset 3px 3px 0 rgba(0,0,0,.2);
+        }
+        #crater1 {
+            right: 120px;
+            top: 110px;
+            height: 45px;
+            width: 45px;
+        }
+        #crater2 {
+            right: 30px;
+            top: 50px;
+            height: 30px;
+            width: 30px;
+        }
+        #crater3 {
+            right: 120px;
+            top: 30px;
+            height: 25px;
+            width: 25px;
+        }
+        #crater4 {
+            right: 40px;
+            top: 140px;
+            height: 20px;
+            width: 20px;
+        }
+        #flag {
+            position: absolute;
+            height: 30px;
+            width: 15px;
+            top: -30px;
+            left: 100px;
+            animation: flag-pole 6.5s cubic-bezier(.645, .045, .355, 1);
+            -webkit-animation: flag-pole 6.5s cubic-bezier(.645, .045, .355, 1);
+            &:before {
+                content: "";
+                position: absolute;
+                height: 30px;
+                width: 3px;
+                background: $moon;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                height: 16px;
+                width: 22px;
+                left: 3px;
+                top: 0;
+                background: $ionic;
+                animation: flag-unfurl 6.5s cubic-bezier(.645, .045, .355, 1);
+                -webkit-animation: flag-unfurl 6.5s cubic-bezier(.645, .045, .355, 1);
+            }
+        }
+    }
+    #mars {
+        overflow: hidden;
+        left: 175px;
+        top: 68%;
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        background-color: $mars;
+        border-radius: 50%;
+        animation: rotating 50s linear infinite;
+        -webkit-animation: rotating 50s linear infinite;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.19);
+        .mars-crater {
+            background-color: darken($mars, 10%);
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: inset 3px 3px 0 rgba(0,0,0,.2);
+        }
+        #crater5 {
+            right: 20px;
+            top: 30px;
+            height: 25px;
+            width: 25px;
+        }
+        #crater6 {
+            right: 80px;
+            top: 80px;
+            height: 45px;
+            width: 45px;
+        }
+    }
+
+    @keyframes fadeDown {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -25%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @-webkit-keyframes fadeDown {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -25%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes titleFadeDown {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -5%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @-webkit-keyframes titleFadeDown {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -5%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes rotating {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes rotating {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    @keyframes flag-pole {
+        0%   { top: 0px; }
+        48%  { top: 0px; }
+        54%  { top: -30px; }
+        90%  { top: -30px; }
+        92%  { top: -30px; }
+        100% { top: -30px; }
+    }
+    @keyframes flag-unfurl {
+        0%   { width: 0; }
+        55%  { width: 0; }
+        60%  { width: 22px; }
+        90%  { width: 22px; }
+        100% { width: 22px; }
+    }
+    @media only screen and (max-width: 1250px) {
+        #intro-content {
+            text-align: center;
+            padding: 0;
+            h2 {
+                color: #FFF;
+                font-size: 1.8em;
+                font-weight: 400;
+            }
+            .sub-title {
+                font-size: 1.15em !important;
+            }
+            #menu-header {
+                font-size: 1em;
+                padding-top: 0 !important;
+            }
+            .menu {
+                nav {
+                    ul {
+                        li {
+                            a {
+                                padding: 22px 0;
+                                min-width: 105px;
+                                height: 95px;
+                                font-size: 10px;
+                                margin-bottom: 20px;
+                                background: rgba(0,0,0,.7);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #moon {
+            left: -50px;
+            top: 50vh;
+        }
+        #mars {
+            display: none;
+        }
+    }
+}

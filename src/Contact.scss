@@ -1,0 +1,100 @@
+@import "./App.scss";
+
+#contact {
+    padding: 70px 130px 50px 130px;
+    background: radial-gradient(circle at top, $dark 0%, $black 100%);
+    color: #FFF;
+    .col-xl-1 {
+      text-align: center;
+        // padding-top: 105px;
+        // margin-left: -10px;
+        // margin-right: -10px;
+        i {
+            font-size: 1.4em;
+            color: #FFF;;
+            transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+        }
+        i:hover {
+            text-shadow: 0px 0px 30px #FFF;
+        }
+    }
+    // hr {
+    //     background-color: $shadow;
+    //     margin-top: 100px;
+    // }
+    // footer {
+    //     text-align: center;
+    //     margin-top: 25px;
+    // }
+    // form {
+    //     margin: 40px auto;
+    //     font-size: 12pt;
+    //     input, textarea {
+    //         height: 50px;
+    //         background-color: transparent;
+    //         border-style: none;
+    //         padding: 25px;
+    //         margin-top: 20px;
+    //         color: #FFF;
+    //         transition: all .2s ease-in-out;
+    //         -webkit-transition: all .2s ease-in-out;
+    //         -moz-transition: all .2s ease-in-out;
+    //         border-radius: 0;
+    //         border-bottom: 1px solid #FFF;
+    //     }
+    //     textarea {
+    //         padding: 16px;
+    //         margin-top: 0px;
+    //         height: 200px;
+    //     }
+    //     input:focus, textarea:focus {
+    //         outline: none;
+    //         border-bottom: 1px solid $shadow;
+    //         background-color:rgba(0, 0, 0, 0.4);
+    //     }
+    //     .form-icon {
+    //         position: absolute;
+    //         text-indent: 15px;
+    //         margin-top: 31px;
+    //         color: #FFF;
+    //         font-size: 26px;
+    //     }
+    //     .form-control {
+    //         text-indent: 30px;
+    //     }
+    //     .fa-comment-o {
+    //         margin-top: 9px;
+    //         font-size: 28px;
+    //     }
+    //     #message {
+    //         text-indent: 38px;
+    //     }
+    //     .message-placeholder {
+    //         margin-top: 15px;
+    //     }
+    //     button {
+    //         background: transparent;
+    //         border: 1px solid #FFF;
+    //         color: #FFF;
+    //         border-radius: 0;
+    //     }
+    //     button:hover {
+    //         cursor: pointer;
+    //     }
+    // }
+    @media only screen and (max-width: 1200px) {
+        padding: 60px 20px 20px 20px;
+        .col-xl-1 {
+            padding: 40px 0 30px 10px;
+            margin: 0;
+            text-align: left;
+        }
+        .col-xl-1:not(:last-child) {
+            border-bottom: 1px solid $shadow;
+        }
+        hr {
+            margin-top: -10px;
+        }
+    }
+}
