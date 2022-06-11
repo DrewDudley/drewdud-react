@@ -38,6 +38,10 @@ span a {
     color: $ionic;
 }
 
+.link {
+    cursor: pointer;
+}
+
 @media only screen and (min-width: 1250px) {
     // Sliding underline from center
     span a:before {

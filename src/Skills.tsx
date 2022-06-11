@@ -21,6 +21,10 @@ export default class Skills extends React.Component {
                 img: 'http://drewdud.com/assets/img/skills/angular.svg',
             },
             {
+                name: 'React*',
+                img: 'http://drewdud.com/assets/img/skills/react.png'
+            },
+            {
                 name: 'Ionic',
                 img: 'http://drewdud.com/assets/img/skills/ionic.png',
             },
@@ -37,8 +41,8 @@ export default class Skills extends React.Component {
                 img: 'http://drewdud.com/assets/img/skills/git.png',
             },
             {
-                name: 'Adobe Suite',
-                img: 'http://drewdud.com/assets/img/skills/ps.svg',
+                name: 'Google Analytics*',
+                img: 'http://drewdud.com/assets/img/skills/analytics.png',
             },
             {
                 name: 'Responsive Design*',
@@ -47,14 +51,14 @@ export default class Skills extends React.Component {
             {
                 name: 'User-Experience*',
                 img: 'http://drewdud.com/assets/img/skills/eye.png',
-            }
+            },
+            // {
+            //     name: 'Guitar',
+            //     img: 'http://drewdud.com/assets/img/skills/eye.png',
+            // }
         ];
 
         const learningSkills = [
-            {
-                name: 'React*',
-                img: 'http://drewdud.com/assets/img/skills/react.png'
-            },
             {
                 name: 'Jasmine & Karma',
                 img: 'http://drewdud.com/assets/img/skills/jasmine.svg',
@@ -66,10 +70,6 @@ export default class Skills extends React.Component {
             {
                 name: 'Node.js',
                 img: 'http://drewdud.com/assets/img/skills/nodejs.svg',
-            },
-            {
-                name: 'Google Analytics*',
-                img: 'http://drewdud.com/assets/img/skills/analytics.png',
             },
             {
                 name: 'Spanish',
@@ -95,7 +95,7 @@ export default class Skills extends React.Component {
         return (
             <div id="skills">
                 <p className="page-title">
-                    These are a handful of my skills...
+                    These are a handful of my skills
                 </p>
                 <div className="container">
                     <div className="row">
@@ -116,7 +116,7 @@ export default class Skills extends React.Component {
                 <hr />
 
                 <p className="page-title">
-                    These are some things that I'm learning...
+                    These are some things that I'm learning
                 </p>
                 <div className="container">
                     <div className="row">
@@ -137,7 +137,7 @@ export default class Skills extends React.Component {
                 <hr />
 
                 <p className="page-title">
-                    And here's my TODO list...
+                    And these are my TODOs
                 </p>
                 <div className="container">
                     <div className="row">

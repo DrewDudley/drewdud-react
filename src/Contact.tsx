@@ -1,4 +1,5 @@
 import React from "react";
+import { scrollHandler } from "./utils";
 import "./Contact.scss";
 
 export default class Contact extends React.Component {
@@ -33,11 +34,6 @@ export default class Contact extends React.Component {
                 icon: 'far fa-envelope',
                 href: 'mailto:drewdudley93@gmail.com',
                 class: 'skill-link'
-            },
-            {
-                icon: 'fas fa-chevron-up',
-                href: '#intro',
-                class: 'link'
             }
         ];
         return (
@@ -53,6 +49,11 @@ export default class Contact extends React.Component {
                                 </div>
                             </React.Fragment>)
                         })}
+                        <div className="col-xl-1">
+                            <h4>
+                                <a onClick={scrollHandler.bind(null, 'intro')} className='link' target="_blank"><i className='fas fa-chevron-up'></i></a>
+                            </h4>
+                        </div>
                     </div>
                 </div>
             </div>

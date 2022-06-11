@@ -1,5 +1,6 @@
 import React from "react";
 import "./Intro.scss";
+import { scrollHandler } from "./utils";
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import CodeIcon from '@material-ui/icons/Code';
 import PaletteIcon from '@material-ui/icons/Palette';
@@ -42,7 +43,7 @@ export default class Intro extends React.Component {
                             Drew Dudley
                         </h2>
                         <p className="sub-title">
-                            UI Developer
+                            Frontend Engineer
                         </p>
                         <p id="greeting">
                             {this.getTime()}
@@ -50,12 +51,12 @@ export default class Intro extends React.Component {
                         <div className="menu">
                             <nav>
                                 <ul>
-                                    <li><a href="#about" className="link hover-link"><FingerprintIcon />  About Me</a></li>
-                                    <li><a href="#skills" className="link hover-link"><CodeIcon /> My Skills</a></li>
+                                    <li><a onClick={scrollHandler.bind(null, 'about')} className="link underline-link"><FingerprintIcon />About Me</a></li>
+                                    <li><a onClick={scrollHandler.bind(null, 'skills')} className="link underline-link"><CodeIcon />My Skills</a></li>
                                 </ul>
                                 <ul>
-                                    <li><a href="#portfolio" className="link hover-link"><DesktopWindows /> My Work</a></li>
-                                    <li><a href="#contact" className="link hover-link"><MailOutlineIcon /> Contact Me</a></li>
+                                    <li><a onClick={scrollHandler.bind(null, 'portfolio')} className="link underline-link"><DesktopWindows />My Work</a></li>
+                                    <li><a onClick={scrollHandler.bind(null, 'contact')} className="link underline-link"><MailOutlineIcon />Contact Me</a></li>
                                 </ul>
                             </nav>
                         </div>
