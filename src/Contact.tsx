@@ -44,7 +44,7 @@ export default class Contact extends React.Component {
                             return (<React.Fragment key={link.name}>
                                 <div className="col-xl-1">
                                     <h4>
-                                        <a href={link.href} className={link.class} target="_blank"><i className={link.icon}></i></a>
+                                        <a href={link.href} className={link.class} target="_blank" rel="noreferrer"><i className={link.icon}></i></a>
                                     </h4>
                                 </div>
                             </React.Fragment>)

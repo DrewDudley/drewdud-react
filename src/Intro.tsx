@@ -3,7 +3,7 @@ import "./Intro.scss";
 import { scrollHandler } from "./utils";
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import CodeIcon from '@material-ui/icons/Code';
-import PaletteIcon from '@material-ui/icons/Palette';
+// import PaletteIcon from '@material-ui/icons/Palette';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import DesktopWindows from '@material-ui/icons/DesktopWindows';
 

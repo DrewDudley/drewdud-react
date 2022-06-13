@@ -101,9 +101,9 @@ export default class Skills extends React.Component {
                     <div className="row">
                         {skills.map(skill => {
                             return (<React.Fragment key={skill.name}>
-                                <div className="col-sm-4 col-lg-2">
+                                <div className="col-sm-4 col-lg-2 skill">
                                     <h4>
-                                        <img src={skill.img} className="skill-img" draggable="false" />
+                                        <img src={skill.img} className="skill-img" alt={skill.name} draggable="false" />
                                     </h4>
                                     <span>
                                         {skill.name}
@@ -122,9 +122,9 @@ export default class Skills extends React.Component {
                     <div className="row">
                         {learningSkills.map(skill => {
                             return (<React.Fragment key={skill.name}>
-                                <div className="col-sm-4 col-lg-2">
+                                <div className="col-sm-4 col-lg-2 skill">
                                     <h4>
-                                        <img src={skill.img} className="skill-img" draggable="false" />
+                                        <img src={skill.img} className="skill-img" alt={skill.name} draggable="false" />
                                     </h4>
                                     <span>
                                         {skill.name}
@@ -143,9 +143,9 @@ export default class Skills extends React.Component {
                     <div className="row">
                         {todoSkills.map(skill => {
                             return (<React.Fragment key={skill.name}>
-                                <div className="col-sm-4 col-lg-2">
+                                <div className="col-sm-4 col-lg-2 skill">
                                     <h4>
-                                        <img src={skill.img} className="skill-img" draggable="false" />
+                                        <img src={skill.img} className="skill-img" alt={skill.name} draggable="false" />
                                     </h4>
                                     <span>
                                         {skill.name}

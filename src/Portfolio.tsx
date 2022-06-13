@@ -54,7 +54,7 @@ export default class Portfolio extends React.Component {
                                 <React.Fragment key={project.title}>
                                     <div className="col-sm-6 col-lg-3">
                                         <figure>
-                                            <a href={project.link} target="_blank">
+                                            <a href={project.link} target="_blank" rel="noreferrer">
                                                 <img src={project.img} alt={project.title} className="image" />
                                                 <figcaption>
                                                 <div className="caption-content">

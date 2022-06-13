@@ -11,6 +11,7 @@
         padding-top: 2.75em;
     }
     .container {
+        max-width: 100%;
         width: 100%;
         padding: 2.75em 0 0 0;
         height: 100%;
@@ -18,7 +19,7 @@
             color: #FFF;
             white-space: nowrap;
         }
-        .col-lg-2 {
+        .skill {
             padding-bottom: 4.5em;
             text-align: center;
             .skill-img {

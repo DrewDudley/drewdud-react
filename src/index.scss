@@ -4,7 +4,7 @@
 $dark: #233143;
 $darker: #090A0F;
 $black: #000;
-$ionic: #4E8DF7;
+$ocean: #4E8DF7;
 $mars: #C25447;
 $mint: #34B3A0;
 $moon: #E6E6E6;
@@ -25,17 +25,17 @@ body {
     font-size: 28px;
     font-weight: 500;
 }
-.draggable {
-    cursor: grab;
-}
-.draggable:active {
-    cursor: grabbing;
-}
+// .draggable {
+//     cursor: grab;
+// }
+// .draggable:active {
+//     cursor: grabbing;
+// }
 span a {
     display: inline-block;
     position: relative;
     text-decoration: none;
-    color: $ionic;
+    color: $ocean;
 }
 
 .link {
@@ -51,7 +51,7 @@ span a {
         height: 1px;
         bottom: 5px;
         left: 0;
-        background-color: $ionic;
+        background-color: $ocean;
         visibility: hidden;
         transform: scaleX(0);
         -webkit-transform: scaleX(0);
@@ -62,5 +62,8 @@ span a {
         visibility: visible;
         transform: scaleX(1);
         -webkit-transform: scaleX(1);
+    }
+    span a:hover {
+        color: $ocean;
     }
 }
