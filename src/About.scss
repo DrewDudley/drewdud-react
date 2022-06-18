@@ -4,7 +4,7 @@
     background: #F4F4F4;
     padding: 110px 130px;
     .container-fluid {
-        .col-xl-2 {
+        .image-container {
             margin: auto;
             text-align: center;
             display: flex;
@@ -12,8 +12,7 @@
             align-items: center;
             .about-img {
                 margin: auto 0 auto -25px;
-                height: 15.5em;
-                width: 15.5em;
+                height: 17em;
                 border-radius: 50%;
                 background: $ocean;
                 box-shadow: 0 3px 10px lighten($ocean, 10%), 0 3px 10px lighten($ocean, 5%);
@@ -22,21 +21,23 @@
                 -webkit-transition: all .25s ease-in-out;
             }
         }
-        .col-xl-9 {
+        .text-content {
             text-align: left;
+            display: flex;
+            margin: auto;
+            flex-direction: column;
         }
         .row:hover .about-img {
             -webkit-transform: translateY(-2px);
             transform: translateY(-2px);
             background: $mint;
-            background-position: 100px;
             box-shadow: 0 3px 10px lighten($mint, 10%), 0 3px 10px lighten($mint, 5%);
         }
     }
     #satellite {
         float: right;
-        right: 10px;
-        top: 50px;
+        padding-right: 10px;
+        padding-top: 30px;
         width: 100px;
         animation: bobble 2.5s infinite ease-in-out;
         -webkit-animation: bobble 2.5s infinite ease-in-out;

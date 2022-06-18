@@ -26,6 +26,9 @@ export default class Intro extends React.Component {
     render() {
         return (
             <div id="intro">
+                <div id="astronaut-container">
+                    <img src="http://drewdud.com/assets/img/astronaut.png" id="astronaut" alt="astronaut" />
+                </div>
                 <div id="moon" className="draggable">
                     <div className="crater" id="crater1"></div>
                     <div className="crater" id="crater2"></div>

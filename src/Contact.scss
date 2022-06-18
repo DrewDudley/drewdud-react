@@ -4,7 +4,7 @@
     padding: 100px 130px 80px 130px;
     background: radial-gradient(circle at top, $dark 0%, $black 100%);
     color: #FFF;
-    .col-xl-1 {
+    .link-container {
       text-align: center;
         // padding-top: 105px;
         // margin-left: -10px;
@@ -85,12 +85,12 @@
     // }
     @media only screen and (max-width: 1200px) {
         padding: 60px 20px 20px 20px;
-        .col-xl-1 {
+        .link-container {
             padding: 40px 0 30px 10px;
             margin: 0;
             text-align: left;
         }
-        .col-xl-1:not(:last-child) {
+        .link-container:not(:last-child) {
             border-bottom: 1px solid $shadow;
         }
         hr {

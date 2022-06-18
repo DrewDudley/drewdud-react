@@ -42,14 +42,14 @@ export default class Contact extends React.Component {
                     <div className="row justify-content-center">
                     {contactLinks.map(link => {
                             return (<React.Fragment key={link.name}>
-                                <div className="col-xl-1">
+                                <div className="col-xl-1 link-container">
                                     <h4>
                                         <a href={link.href} className={link.class} target="_blank" rel="noreferrer"><i className={link.icon}></i></a>
                                     </h4>
                                 </div>
                             </React.Fragment>)
                         })}
-                        <div className="col-xl-1">
+                        <div className="col-xl-1 link-container">
                             <h4>
                                 <a onClick={scrollHandler.bind(null, 'intro')} className='link' target="_blank"><i className='fas fa-chevron-up'></i></a>
                             </h4>
